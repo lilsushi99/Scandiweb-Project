@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="style2.css" rel="stylesheet">
+    <title>Add Project Page</title>
+</head>
+<body>
+    <section class="Add-product">
+        <div class="Add-Container">
+            <div class="Add-Title">Product Add</div>
+            <div class="line1"></div>
+            <div id="product-form">
+                <form action="save.php" method="POST">
+                    <div class="move-label1">
+                        <label>SKU</label>
+                    </div> 
+                    <div class="move-field">     
+                        <input type="text" placeholder="#sku" name="sku" required>
+                    </div>      
+                    <div class="move-label2">
+                        <label>Name</label>
+                    </div> 
+                    <div class="move-field">       
+                        <input type="text" placeholder="#name" name="name" required>  
+                    </div>    
+                    <div class="move-label3">
+                        <label>Price ($)</label>
+                    </div>  
+                    <div class="move-field">       
+                        <input type="number" placeholder="#price" name="price" required>  
+                    </div>   
+                    <div class="Save-btn">
+                        <input type="submit">
+                    </div>
+                    <label>Type Switcher</label>
+                    <select id="productType" name="productType" onchange="myFunction()">
+                        <option value="">Type Switcher</option>
+                        <option value="Disc">Disc</option>
+                        <option value="Iron">Iron</option>
+                        <option value="Table">Table</option>
+                    </select>
+                    <!---
+                    <div class="fieldbox" id="Disc-switch">
+                        <label>Size</label>
+                        <input type="text" placeholder="Enter Disc Size" value="size">
+                    </div>
+                    <div class="fieldbox" id="Iron-switch">
+                        <label>Weight</label>
+                        <input type="text" placeholder="Enter Iron Weight" value="weight">
+                    </div>
+                    <div class="fieldbox" id="Table-switch">
+                        <label>Dimension</label>
+                        <input type="text" placeholder="Enter Table Dimensions" value="height">
+                        <input type="text" placeholder="Enter Table Dimensions" value="width">
+                        <input type="text" placeholder="Enter Table Dimensions" value="length">
+                    </div>
+                    --->
+                </form>
+                    <button class="Cancel-btn">
+                     <a href="Productpage.html">Cancel</a>
+                     </button>
+                 </a>
+            </div> 
+            <div class="line2"></div>       
+        </div>
+    </section>
+</body>
+<script>
+  
+</script>
+
+</html>
